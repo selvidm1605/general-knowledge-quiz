@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>General Knowledge Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="quiz-container">
+    <header class="quiz-header">
+      <p class="eyebrow">KNOWLEDGE CHALLENGE</p>
+      <h1>General Knowledge Quiz</h1>
+      <p class="subtitle">Test your knowledge, one question at a time.</p>
+    </header>
+
+    <section id="quiz-screen">
+      <div class="quiz-info">
+        <span id="question-count">Question 1 of 10</span>
+        <div class="timer">
+          <span>Time left</span>
+          <strong id="timer">10:00</strong>
+        </div>
+      </div>
+
+      <div class="progress-track">
+        <div id="progress-bar"></div>
+      </div>
+
+      <h2 id="question">Loading question...</h2>
+
+      <div id="options" class="options"></div>
+
+      <p id="feedback" class="feedback" aria-live="polite"></p>
+
+      <div class="navigation">
+        <button id="previous-btn" class="btn btn-secondary">
+          Previous
+        </button>
+        <button id="next-btn" class="btn btn-primary">
+          Next
+        </button>
+      </div>
+    </section>
+
+    <section id="result-screen" class="hidden" aria-live="polite">
+      <div class="result-icon">✓</div>
+      <p class="eyebrow">QUIZ COMPLETED</p>
+      <h2 id="result-title">Your Results</h2>
+      <p id="result-message"></p>
+
+      <div class="score-card">
+        <span>Your Score</span>
+        <strong id="final-score">0 / 10</strong>
+        <div class="progress-track">
+          <div id="result-progress"></div>
+        </div>
+        <p id="percentage">0%</p>
+      </div>
+
+      <button id="restart-btn" class="btn btn-primary">
+        Try Again
+      </button>
+    </section>
+
+    <footer>
+      <p>Take your time. Think carefully. Do your best.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
